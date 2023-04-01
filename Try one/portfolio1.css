@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-image: url(../Images/Background/Moon/MoonYellow1.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    display: flex;
+    height: 10vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.238);
+    font-size: clamp(0.7rem ,1.5vw, 2rem);
+}
+nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo, .link{
+    flex-basis: calc(100% /4);
+}
+.contact{
+    flex-grow: 1;
+}
+nav img{
+    height: 5vh;
+}
+nav a{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0);
+    color: white;
+    transition: ease-in 0.5s;
+}
+nav a:hover{
+    text-decoration-color: rgba(255, 255, 255, 0.49);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;600&display=swap');
+.logo{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    font-size: 3vh;
+    padding-left: 2%;
+    justify-content:flex-start;
+}
+.logo .bold{
+    font-weight: 600;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+#mainContentHolder{
+    /* width: 100%;
+    height: 80vh; */
+    /* aspect-ratio: 23/9; */
+    /* margin: 0px 10%; */
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.lt{
+    color: rgb(13, 0, 253);
+}
+.gt{
+    color: orange;
+}
+
+.blur{
+    width: 50%;
+    background-color: rgba(13, 0, 253, 0.117);
+    backdrop-filter: blur(3px);
+    /* background-color: aqua; */
+    font-size: clamp(1rem ,2vw, 3rem);
+    color: white;
+    
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+     */
+    
+}
+
+.blur > h1{
+    padding-left: 3%;
+}
+.info{
+    width: 50%;
+    background-color: rgba(255, 166, 0, 0.221);    
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+.info > p{
+    font-size: clamp(1rem ,2vw, 3rem);
+    color: white;
+    padding: 1em 1em;
+}
+
+@media screen and (max-width: 1080px) {
+
+    body{
+        height: 100vh;
+    }
+    #mainContentHolder{
+        flex-direction: column;
+        aspect-ratio: auto;
+        /* min-height: 80vh; */
+        height: clamp(60vh, 80vh, 90vh);
+    }
+    .blur{
+        height: 50%;
+        width: 100%;
+    }
+    .info{
+        height: 50%;
+        width: 100%;
+    }
+}
