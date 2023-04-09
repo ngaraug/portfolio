@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio2.css">
+    <title>Gaurang Mestry Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-mainContentHolder">
+            <a href="#home" class="nav-section logo">G<span>M.</span></a>
+
+            <!-- ****old nav-section info**** -->
+            <!-- <div class="nav-section navInfo">
+                <div class="navAbout" ><a class="link" href="">about</a></div>
+                <div class="navWork" ><a class="link" href="">work</a></div>
+                <div class="navContact" ><a class="link" href="">contact</a></div>
+            </div> -->
+            <!-- ****old nav-section info**** -->
+            
+            <label class="hamburgerMenu" for="toggle-nav">
+                <div class="backgroundCircle"></div>
+                <img class="plus-icon" src="https://assets.website-files.com/622f2476e95ec7155b37e7b0/6230608120c6cb6c4566f5d4_icons8-plus-math.svg" alt="">
+            </label>
+        </div>
+
+        <!-- ****Hamburger menu old div**** -->
+        <!-- <div class="hamburgerMenu">
+            <div class="backgroundCircle"></div>
+            <img class="plus-icon" src="https://assets.website-files.com/622f2476e95ec7155b37e7b0/6230608120c6cb6c4566f5d4_icons8-plus-math.svg" alt="">
+        </div> -->
+        <!-- ****Hamburger menu old div**** -->
+        <input type="checkbox" id="toggle-nav">
+        <div id="nav-listContainer">
+            <ul class="nav-list">
+                <li><a class="link" href="#about"><span class="lt">&lt</span>/<span class="gt">&gt</span> about</a></li>
+                <li><a class="link" href="#work"><span class="lt">&lt</span>/<span class="gt">&gt</span> work</a></li>
+                <li><a class="link" href="#contact"><span class="lt">&lt</span>/<span class="gt">&gt</span> contact</a></li>
+            </ul>
+        </div>
+    </nav>
+   <main>
+        <div id="home" class="mainContainers">
+
+            <div class="homeMainContainer ">
+                <div class="homeInfoContainer">
+                    <div class="myName">
+                        <span>hi!</span>
+                        <span>i'm gaurang.</span>
+                        <span><span class="lt">&lt</span><span class="s">/</span><span class="gt">&gt</span></span>
+                        
+                    </div>
+                    <div class="myDescription">
+                        <span>an aspiring software engineer that builds stuff for the web.</span>
+                        <span><span class="lt">&lt</span><span class="s">/</span><span class="gt">&gt</span></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About container -->
+        <div id="about" class="mainContainers">
+            <div class="aboutMainContainer ">
+                <div class="heading">
+                    <h1><span class="lt">&lt</span>/<span class="gt">&gt</span>about.</h1>
+                    <p>i'm currently pursuing IT engineering at University of Mumbai.</p>
+                </div>
+                <div class="aboutInfoMainContainer">
+                    <div>
+                        <div class="skills">
+                            <h2 class="heading">skills<span class="lt">&lt</span>/<span class="gt">&gt</span></h2>
+                            <div class="skillsGrid">
+                                <section class="skillItem html5">html5</section>
+                                <section class="skillItem css">css</section>
+                                <section class="skillItem js">js</section>
+                                <section class="skillItem reactjs">reactjs</section>
+                                <section class="skillItem nodejs">nodejs</section>
+                                <section class="skillItem python">python</section>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <h2 class="heading">experience<span class="lt">&lt</span>/<span class="gt">&gt</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutSocials">
+                    <div class="socials">instagram</div>
+                    <div class="socials">linkedin</div>
+                    <div class="socials">github</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Projects container -->
+        <div id="work" class="mainContainers">
+            <div class="workMainContainer ">
+                <h1 class="heading"><span class="lt">&lt</span>/<span class="gt">&gt</span>work.</h1>
+            </div>
+        </div>
+
+        <!-- Contact container -->
+        <div id="contact" class="mainContainers">
+            <div class="contactMainContainer ">
+                <div class="heading">
+                    <h1><span class="lt">&lt</span>/<span class="gt">&gt</span>reach out.</h1>
+                    <p><span style="display: block;">got some work to put in?</span><span style="display: block;">i'm down for it!</span></p>
+                </div>
+                <div class="contactFormContainer">
+                    <form action="mailto:vu4f2021094@pvppcoe.ac.in" class="contactForm" method="post" enctype="text/plain">
+                        <div>
+                            <input type="text" id="name" placeholder="name" class="formInput" autocomplete="off" required>
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="email" class="formInput" autocomplete="off" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="phone" placeholder="phone" class="formInput" pattern="[0-9]{10}" maxlength="10" minlength="10" autocomplete="off" required>
+                        </div>
+                        <div>
+                            <input type="text" id="message" placeholder="work description" class="formInput" autocomplete="off" required>
+                        </div>
+                        <div>
+                            <button id="formButton">Lets do it!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+   </main>
+   <script src="./portfolio2.js"></script>
+</body>
+</html>
